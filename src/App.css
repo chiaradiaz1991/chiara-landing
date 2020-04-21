@@ -1,0 +1,153 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  background-color: #F2ACB9;
+}
+.App {
+  text-align: center;
+  background-color: #F2ACB9;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  font-family: 'Roboto';
+  color: #FAFAFA;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  border-radius: 50%
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #FAFAFA;
+  font-size: 60px;
+  margin: 20px;
+}
+
+.main-description{
+  font-size: 4rem;
+  margin: 1.5rem 0;
+  font-weight: bolder;
+}
+
+.description {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 310px) and (max-width: 575px) {
+	body {
+    font-size: 1rem;
+  }
+  .App {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-description{
+    text-align: center;
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 2rem;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.download {
+  font-size: 10px;
+}
+
+.contact {
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+a {
+  color: #FAFAFA;
+}
+
+.footer {
+  font-size: 14px;
+  color: #D499A7;
+  margin-top: 1rem;
+}
+
+@media (min-width: 576px) {
+	body {
+    font-size: 14px;
+  }
+.links {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+	body {
+    font-size: 16px;
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+	body {
+    font-size: 18px;
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+	body {
+    font-size: 20px;
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+  }
+}
