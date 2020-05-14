@@ -1,4 +1,3 @@
 # My landing page
 
-
-https://chiaradiaz.netlify.app/
+https://chiaradiaz.com/
