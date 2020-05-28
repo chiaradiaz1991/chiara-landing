@@ -1,153 +1,146 @@
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Playfair+Display:wght@900&family=Sumana:wght@700&display=swap');
 
 
-.body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  background-color: #F2ACB9;
+
+/* font-family: 'Jost', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Sumana', serif; */
+
+
+body {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
 }
-.App {
+
+.app {
   text-align: center;
-  background-color: #F2ACB9;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  font-family: 'Roboto';
-  color: #FAFAFA;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  border-radius: 50%
+.app-header {
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-logo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #FAFAFA;
-  font-size: 60px;
-  margin: 20px;
-}
 
 .main-description{
-  font-size: 4rem;
+  color: black;
+  font-size: 60px;
   margin: 1.5rem 0;
+  font-family: 'Playfair Display', serif;
   font-weight: bolder;
 }
 
 .description {
-  font-size: 2rem;
+  font-family: 'Jost', sans-serif;
+  color: black;
+  font-size: 24px;
   margin: 1.5rem 0;
-  font-family: 'Roboto', sans-serif;
   font-weight: 800;
 }
 
 .links {
   display: flex;
   flex-direction: row;
+  color: black;
+  width: 80%;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-link {
+  color: black;
+  font-size: 40px;
 }
 
-@media (min-width: 310px) and (max-width: 575px) {
-	body {
-    font-size: 1rem;
-  }
-  .App {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  .about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .main-description{
-    text-align: center;
-    font-size: 3rem;
-  }
-  .description {
-    font-size: 2rem;
-  }
-  .links {
-    display: flex;
-    flex-direction: column;
-  }
+.text-second-description {
+  font-size: 16px;
 }
 
-.download {
-  font-size: 10px;
+.skills {
+  font-size: 13px;
+  color: #242424;
+  text-align: center;
 }
 
-.contact {
-  font-size: 1rem;
-  margin-top: 3rem;
+.contact {
+  width: 90%;
 }
 
-a {
-  color: #FAFAFA;
+.contact-text {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .footer {
-  font-size: 14px;
-  color: #D499A7;
-  margin-top: 1rem;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  color: #242424;
+  font-size: 12px;
 }
 
-@media (min-width: 576px) {
-	body {
-    font-size: 14px;
-  }
-.links {
-    display: flex;
-    justify-content: center;
-  }
-}
 
-@media (min-width: 768px) {
-	body {
-    font-size: 16px;
-  }
-  .links {
-    display: flex;
-    justify-content: center;
-  }
-}
 
-@media (min-width: 992px) {
-	body {
+
+
+
+
+@media only screen and (min-width: 768px) {
+  .app-header {
+    padding-top: 45px;
+  }
+
+  .second-description {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .text-second-description {
     font-size: 18px;
   }
+
+  .skills {
+    font-size: 14px;
+  }
+
   .links {
-    display: flex;
-    justify-content: center;
+    width: 60%;
   }
 }
 
-@media (min-width: 1200px) {
-	body {
-    font-size: 20px;
+
+
+@media only screen and (min-width: 1024px) {
+  body {
+    width: 60%;
+    margin: auto;
   }
-  .links {
-    display: flex;
-    justify-content: center;
+
+  .skills {
+    font-size: 15px;
   }
+
+  .app-link:hover {
+    animation: move 1s ease-in-out;
+  }
+} 
+
+
+@keyframes move {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
