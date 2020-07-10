@@ -1,0 +1,346 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Playfair+Display:wght@900&family=Sumana:wght@700&display=swap');∑
+
+body {
+  margin: 0;
+}
+
+.App.light {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.3s all;
+  .app-header {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    .app-logo {
+      /* width: 250px; */
+      height: 250px;
+      border-radius: 50%;
+      }
+    .about-me {        
+      .main-description{
+        color: #242424;
+        font-size: 60px;
+        margin: 1.5rem 0;
+        font-family: 'Playfair Display', serif;
+        font-weight: bolder;
+        .hello {
+        }
+      }
+    }
+    .description {
+      font-family: 'Jost', sans-serif;
+      color: #242424;
+      font-size: 24px;
+      margin: 1.5rem 0;
+      font-weight: 800;
+    }
+    .second-description {
+      .text-second-description {
+        font-size: 16px;
+        font-family: 'Jost', sans-serif;
+        .link-tarot-impulso {
+          color: #a88ebd
+        }
+      }
+      .skills {
+        font-size: 13px;
+        color: #242424;
+        text-align: center;
+        font-family: 'Jost', sans-serif;
+      }
+    }
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    color: #242424;
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    .app-link {
+      color: #242424;
+      font-size: 40px;
+    }
+  }
+  .contact {
+    // width: 90%;
+    max-width: 60%; 
+    .contact-text {
+      font-size: 14px;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Jost', sans-serif;
+    }
+  }
+  .footer {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: #242424;
+    font-size: 12px;
+    font-family: 'Jost', sans-serif;
+    width: 60%;
+  }
+}
+
+.App.dark {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+	background-color: #333333;
+	color: #E3E3E3;
+  transition: 0.3s all;
+  .app-header {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    .app-logo {
+      /* width: 250px; */
+      height: 250px;
+      border-radius: 50%;
+      }
+    .about-me {        
+      .main-description{
+        color: #242424;
+        font-size: 60px;
+        margin: 1.5rem 0;
+        font-family: 'Playfair Display', serif;
+        font-weight: bolder;
+        .hello {
+          color: #E3E3E3;
+        }
+      }
+    }
+    .description {
+      font-family: 'Jost', sans-serif;
+      color: #E3E3E3;
+      font-size: 24px;
+      margin: 1.5rem 0;
+      font-weight: 800;
+    }
+    .second-description {
+      .text-second-description {
+        font-size: 16px;
+        font-family: 'Jost', sans-serif;
+        .link-tarot-impulso {
+          color: #a88ebd
+        }
+      }
+      .skills {
+        font-size: 13px;
+        color: darkgrey;
+        text-align: center;
+        font-family: 'Jost', sans-serif;
+      }
+    }
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    color:#242424;
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    .app-link {
+      color: #E3E3E3;
+      font-size: 40px;
+    }
+  }
+  .contact {
+    // width: 90%;
+    max-width: 60%;
+    .contact-text {
+      font-size: 16px;
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Jost', sans-serif;
+    }
+  }
+  .footer {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: grey;
+    font-size: 12px;
+    font-family: 'Jost', sans-serif;
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .App.light {
+    .app-header {
+      padding-top: 45px;
+      .app-logo {
+        }
+      .about-me {        
+        .main-description{
+          .hello {
+          }
+        }
+      }
+      .description {
+      }
+      .second-description {
+        margin-left: 50px;
+        margin-right: 50px;
+        .text-second-description {
+          font-size: 18px;
+        }
+        .skills {
+          font-size: 14px;
+        }
+      }
+    }
+    .links {
+      width: 60%;
+      .app-link {
+      }
+    }
+    .contact {
+      .contact-text {
+      }
+    }
+    .footer {
+    }
+  }
+  .App.dark {
+    // height: 100vh;
+    .app-header {
+      padding-top: 45px;
+      .app-logo {
+        }
+      .about-me {        
+        .main-description{
+          .hello {
+          }
+        }
+      }
+      .description {
+      }
+      .second-description {
+        margin-left: 50px;
+        margin-right: 50px;
+        .text-second-description {
+          font-size: 18px;
+        }
+        .skills {
+          font-size: 14px;
+        }
+      }
+    }
+    .links {
+      width: 60%;
+      .app-link {
+      }
+    }
+    .contact {
+      .contact-text {
+      }
+    }
+    .footer {
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+  body {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .App.light {
+    .app-header {
+      width: 60%;
+      .app-logo {
+        }
+      .about-me {        
+        .main-description{
+          .hello {
+          }
+        }
+      }
+      .description {
+      }
+      .second-description {
+        .text-second-description {
+        }
+        .skills {
+          font-size: 15px;
+        }
+      }
+    }
+    .links {
+      width: 40%;
+      .app-link {
+        &:hover {
+          animation: move 1s ease-in-out;
+        }
+      }
+    }
+    .contact {
+      width: 60%;
+      .contact-text {
+      }
+    }
+    .footer {
+      width: 60%;
+    }
+  }
+    .App.dark {
+      // height: 100vh;
+    .app-header {
+      width: 60%;
+      .app-logo {
+        }
+      .about-me {        
+        .main-description{
+          .hello {
+          }
+        }
+      }
+      .description {
+      }
+      .second-description {
+        .text-second-description {
+        }
+        .skills {
+          font-size: 15px;
+        }
+      }
+    }
+    .links {
+      width: 40%;
+      .app-link {
+        &:hover {
+          animation: move 1s ease-in-out;
+        }
+      }
+    }
+    .contact {
+      width: 60%;
+      .contact-text {
+      }
+    }
+    .footer {
+      width: 60%;
+    }
+  }
+}
+
+
+@keyframes move {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
