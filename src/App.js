@@ -6,14 +6,23 @@ import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import { faBehance, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons/";
 import resume from './images/ChiaraDiazResume.pdf';
 import darkMode from "./hooks/theme";
+import Moon from './images/moon.png';
+import Sun from './images/sun.png';
 
 const App = () => {
   const { theme, toggleTheme } = darkMode();
   return (
     <div className={`App ${theme}`}>
-      <button type="button" onClick={toggleTheme}>
-        Switch theme
-        </button>
+      <div onClick={toggleTheme} className="button-toggle">
+          {
+            theme === 'light' ? (
+              <img src={Moon} alt="" className="mode" />
+            ) : (
+              <img src={Sun} alt="" className="mode"/>
+            )
+
+          }
+      </div>
       <div className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
         <div className="about-me">
