@@ -31,7 +31,7 @@ const App = () => {
           </div>
         </div>
         <div className="description">
-          Front-end Developer | Illustrator | Copywriter
+          Front-end Developer | Illustrator | Creative Copywriter
         </div>
         <div className="second-description">
           <p className="text-second-description">
