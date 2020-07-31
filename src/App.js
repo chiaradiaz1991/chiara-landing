@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.scss';
 import logo from './image.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -41,7 +41,7 @@ const App = () => {
             <a href="https://tarotimpulso.com" target="_blank" className="link-tarot-impulso">Tarot Impulso</a> is a personal project where I combine illustration and web development.
           </p>
           <p className="skills">
-            Skills 👩🏻‍💻 HTML5, CSS3 (SASS/LESS), Bootstrap, Javascript, TypeScript, React js, JQuery, Node js, Express js, React Native, Git, Docker, Redux, NextJs, Adobe Illustrator, Adobe Photoshop & Procreate.
+            <b>Skills</b> 👩🏻‍💻 HTML5, CSS3 (SASS/LESS), Bootstrap, Javascript, TypeScript, React js, JQuery, Node js, Express js, React Native, Git, Docker, Redux, NextJs, VueJs, Adobe Illustrator, Adobe Photoshop & Procreate.
             </p>
         </div>
       </div>

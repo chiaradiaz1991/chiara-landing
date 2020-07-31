@@ -15,6 +15,9 @@ body {
   .button-toggle {
     margin-top: 30px;
       .mode {
+        box-shadow: 0px 4px 10px rgba(116, 78, 153, 0.2);
+        border-radius: 50%;
+        padding: 5px;
         width: 30px;
         height: 30px;
       }
@@ -24,7 +27,8 @@ body {
     padding-left: 30px;
     padding-top: 30px;
     .app-logo {
-      /* width: 250px; */
+      border: 3px solid #F3B543;
+      padding: 5px;
       height: 250px;
       border-radius: 50%;
       }
@@ -42,7 +46,7 @@ body {
     }
     .description {
       font-family: 'Jost', sans-serif;
-      color: #242424;
+      color: #F3B543;
       font-size: 24px;
       margin: 1.5rem 0;
       font-weight: 800;
@@ -52,11 +56,20 @@ body {
         font-size: 16px;
         font-family: 'Jost', sans-serif;
         .link-tarot-impulso {
-          color: #a88ebd
+          font-weight: 700;
+          text-decoration: none;
+          background-image: linear-gradient(rgba(168, 142, 189,.5) 0%,rgba(168, 142, 189,.5) 100%);
+          background-position: 0 100%;
+          background-repeat: repeat-x;
+          background-size: 4px 4px;
+          transition: background-size .4s;
+        }
+        a:hover {
+          background-size: 4px 50px;
         }
       }
       .skills {
-        font-size: 13px;
+        font-size: 17px;
         color: #242424;
         text-align: center;
         font-family: 'Jost', sans-serif;
@@ -76,7 +89,6 @@ body {
     }
   }
   .contact {
-    // width: 90%;
     max-width: 60%; 
     .contact-text {
       font-size: 14px;
@@ -107,6 +119,9 @@ body {
   .button-toggle {
     margin-top: 30px;
       .mode {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        padding: 5px;
         width: 30px;
         height: 30px;
       }
@@ -116,7 +131,8 @@ body {
     padding-left: 30px;
     padding-top: 30px;
     .app-logo {
-      /* width: 250px; */
+      border: 3px solid #FCCAC6;
+      padding: 5px;
       height: 250px;
       border-radius: 50%;
       }
@@ -134,7 +150,8 @@ body {
     }
     .description {
       font-family: 'Jost', sans-serif;
-      color: #E3E3E3;
+      // color: #E3E3E3;
+      color: #FCCAC6;
       font-size: 24px;
       margin: 1.5rem 0;
       font-weight: 800;
@@ -144,11 +161,22 @@ body {
         font-size: 16px;
         font-family: 'Jost', sans-serif;
         .link-tarot-impulso {
-          color: #a88ebd
+          border-bottom: none;
+          color: #e6dfec;
+          font-weight: 700;
+          text-decoration: none;
+          background-image: linear-gradient(rgba(168, 142, 189,.5) 0%,rgba(168, 142, 189,.5) 100%);
+          background-position: 0 100%;
+          background-repeat: repeat-x;
+          background-size: 4px 4px;
+          transition: background-size .4s;
+        }
+        a:hover {
+          background-size: 4px 50px;
         }
       }
       .skills {
-        font-size: 13px;
+        font-size: 17px;
         color: darkgrey;
         text-align: center;
         font-family: 'Jost', sans-serif;
@@ -168,7 +196,6 @@ body {
     }
   }
   .contact {
-    // width: 90%;
     max-width: 60%;
     .contact-text {
       font-size: 16px;
@@ -212,7 +239,7 @@ body {
           font-size: 18px;
         }
         .skills {
-          font-size: 14px;
+          font-size: 17px;
         }
       }
     }
@@ -229,7 +256,6 @@ body {
     }
   }
   .App.dark {
-    // height: 100vh;
     .app-header {
       padding-top: 45px;
       .app-logo {
@@ -249,7 +275,7 @@ body {
           font-size: 18px;
         }
         .skills {
-          font-size: 14px;
+          font-size: 17px;
         }
       }
     }
@@ -291,7 +317,7 @@ body {
         .text-second-description {
         }
         .skills {
-          font-size: 15px;
+          font-size: 17px;
         }
       }
     }
@@ -299,7 +325,7 @@ body {
       width: 40%;
       .app-link {
         &:hover {
-          animation: move 1s ease-in-out;
+          animation: move 1.6s ease-out;
         }
       }
     }
@@ -313,7 +339,6 @@ body {
     }
   }
     .App.dark {
-      // height: 100vh;
     .app-header {
       width: 60%;
       .app-logo {
@@ -330,7 +355,7 @@ body {
         .text-second-description {
         }
         .skills {
-          font-size: 15px;
+          font-size: 17px;
         }
       }
     }
@@ -338,7 +363,7 @@ body {
       width: 40%;
       .app-link {
         &:hover {
-          animation: move 1s ease-in-out;
+          animation: move 1.6s ease-out;
         }
       }
     }
@@ -353,9 +378,11 @@ body {
   }
 }
 
-
 @keyframes move {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
 }
