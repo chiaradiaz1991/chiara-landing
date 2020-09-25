@@ -35,7 +35,7 @@ const App = () => {
         </div>
         <div className="second-description">
           <p className="text-second-description">
-            I'm a front-end developer from Argentina, based in Poland. I enjoy learning new things every day. I love making beautiful and functional websites and mobile applications! Also, in my free time, I'm a digital illustrator.
+            I'm a front-end developer from Buenos Aires, Argentina, based in Poland. I enjoy learning new things every day, not only related to software development. Also, I have a little background in graphic desing and in my free time, I'm a digital illustrator. Some of the things I like the most are Astrology, tarot and tattoos.
           </p>
           <p className="text-second-description">
             <a href="https://tarotimpulso.com" target="_blank" className="link-tarot-impulso">Tarot Impulso</a> is a personal project where I combine illustration and web development.
