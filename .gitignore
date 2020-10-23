@@ -29,4 +29,7 @@ firebase.json
 /.firebase
 
 image.png
-/images
+/images/ChiaraDiazResume.pdf
+*.png
+*.pdf
+
