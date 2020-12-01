@@ -4,7 +4,7 @@ import logo from './image.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import { faBehance, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons/";
-import resume from './images/ChiaraDiazResume.pdf';
+import resume from './images/ChiaraDiaz_Resume.pdf';
 import darkMode from "./hooks/theme";
 import Moon from './images/moon.png';
 import Sun from './images/sun.png';
