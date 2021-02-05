@@ -171,7 +171,6 @@ body {
       border-radius: 50%;
     }
     .left-container {
-      width: 60%;
       width: 300px;
       .about-me {
         .main-description {
@@ -276,9 +275,10 @@ body {
     padding: 0;
   }
   .App.light {
+    width: 100%;
+    margin: auto;
     .app-header {
       display: flex;
-      padding-top: 45px;
       .left-container {
         width: 600px;
         .second-description {
@@ -295,9 +295,10 @@ body {
     }
   }
   .App.dark {
+    width: 100%;
+    margin: auto;
     .app-header {
       display: flex;
-      padding-top: 45px;
       .left-container {
         width: 600px;
         .second-description {
@@ -321,52 +322,88 @@ body {
     padding: 0;
   }
   .App.light {
+    .button-toggle {
+      margin-top: 20px;
+    }
     .app-header {
+      width: 900px;
       display: flex;
       flex-direction: row;
       align-items: center;
+      padding-right: 0px;
+      padding-left: 0px;
+      padding-top: 0px;
       .left-container {
-        width: 800px;
+        margin-left: 50px;
+        .description {
+          text-align: left;
+        }
         .second-description {
           text-align: left;
+          margin-left: 0px;
+          margin-right: 0px;
           .skills {
             font-size: 17px;
             text-align: left;
+            margin-bottom: 30px;
           }
         }
       }
     }
     .links {
-      width: 800px;
+      width: 900px;
+      margin-bottom: 10px;
       .app-link {
         &:hover {
           animation: move 1.6s ease-out;
         }
       }
+    }
+    .footer {
+      margin-bottom: 10px;
+      margin-top: 0px;
     }
   }
   .App.dark {
+    .button-toggle {
+      margin-top: 20px;
+    }
     .app-header {
       display: flex;
       flex-direction: row;
+      width: 900px;
+      padding-right: 0px;
+      padding-left: 0px;
+      padding-top: 0px;
       .left-container {
-        width: 800px;
+        margin-left: 50px;
+        .description {
+          text-align: left;
+        }
         .second-description {
           text-align: left;
+          margin-left: 0px;
+          margin-right: 0px;
           .skills {
             font-size: 17px;
             text-align: left;
+            margin-bottom: 30px;
           }
         }
       }
     }
     .links {
-      width: 800px;
+      width: 900px;
+      margin-bottom: 10px;
       .app-link {
         &:hover {
           animation: move 1.6s ease-out;
         }
       }
+    }
+    .footer {
+      margin-bottom: 10px;
+      margin-top: 0px;
     }
   }
 }
