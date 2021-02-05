@@ -341,26 +341,19 @@ body {
       margin-top: 20px;
     }
     .app-header {
-      width: 900px;
       display: flex;
-      flex-direction: row;
       align-items: center;
       padding-right: 0px;
       padding-left: 0px;
       padding-top: 0px;
       .left-container {
         margin-left: 50px;
-        width: 900px;
-        .description {
-          text-align: left;
-        }
+        width: 750px;
         .second-description {
-          text-align: left;
           margin-left: 0px;
           margin-right: 0px;
           .skills {
             font-size: 17px;
-            text-align: left;
             margin-bottom: 30px;
           }
         }
@@ -390,24 +383,17 @@ body {
     }
     .app-header {
       display: flex;
-      flex-direction: row;
-      width: 900px;
       padding-right: 0px;
       padding-left: 0px;
       padding-top: 0px;
       .left-container {
         margin-left: 50px;
-        width: 900px;
-        .description {
-          text-align: left;
-        }
+        width: 750px;
         .second-description {
-          text-align: left;
           margin-left: 0px;
           margin-right: 0px;
           .skills {
             font-size: 17px;
-            text-align: left;
             margin-bottom: 30px;
           }
         }
