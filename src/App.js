@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import logo from "./image.png";
+import logo from "./userimage.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -33,7 +33,7 @@ const App = () => {
             </div>
           </div>
           <div className="description">
-            Front-end Developer | Illustrator | Creative Copywriter
+            Frontend Developer | Illustrator | Creative Copywriter
           </div>
           <div className="second-description">
             <p className="text-second-description">
